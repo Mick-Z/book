@@ -9,12 +9,12 @@
   <url>http://www.tamingtext.com</url>
 
   <properties>
-     <lucene.version>3.6.0</lucene.version>
-     <tika.version>0.10</tika.version>
-     <mahout.version>0.6</mahout.version>
-     <release.update.interval>daily</release.update.interval>
-     <snapshot.update.interval>interval:60</snapshot.update.interval>
-     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <lucene.version>3.6.0</lucene.version>
+    <tika.version>0.10</tika.version>
+    <mahout.version>0.6</mahout.version>
+    <release.update.interval>daily</release.update.interval>
+    <snapshot.update.interval>interval:60</snapshot.update.interval>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <build>
@@ -58,7 +58,7 @@
           </execution>
         </executions>
       </plugin>
-   </plugins>
+    </plugins>
 
     <pluginManagement>
       <plugins>
@@ -98,21 +98,21 @@
     <profile>
       <id>manuscript</id>
       <build>
-          <resources>
-            <resource>
-              <directory>../manuscript</directory>
-              <filtering>true</filtering>
-              <includes>
-                <include>**/*.docbook</include>
-                <include>**/*.eps</include>
-                <include>**/*.gif</include>
-                <include>**/*.png</include>
-                <include>**/*.tiff</include>
-                <include>**/*.tif</include>
-                <include>**/*.xml</include>
-              </includes>
+        <resources>
+          <resource>
+            <directory>../manuscript</directory>
+            <filtering>true</filtering>
+            <includes>
+              <include>**/*.docbook</include>
+              <include>**/*.eps</include>
+              <include>**/*.gif</include>
+              <include>**/*.png</include>
+              <include>**/*.tiff</include>
+              <include>**/*.tif</include>
+              <include>**/*.xml</include>
+            </includes>
             <excludes>
-             <exclude>notes</exclude>
+              <exclude>notes</exclude>
             </excludes>
           </resource>
         </resources>
@@ -123,13 +123,13 @@
       <build>
         <plugins>
           <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
+            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-assembly-plugin</artifactId>
             <configuration>
               <tarLongFileMode>gnu</tarLongFileMode>
               <descriptors>
                 <descriptor>src/main/assembly/project.xml</descriptor>
-             </descriptors>
+              </descriptors>
             </configuration>
             <executions>
               <execution>
@@ -145,7 +145,7 @@
       </build>
     </profile>
   </profiles>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -628,21 +628,21 @@
     </repository>
   -->
 
-  <!--
-    <repository>
-      <id>apache.maven2.snapshot.repository</id>
-      <name>Apache Maven 2 repository</name>
-      <url>http://people.apache.org/maven-snapshot-repository</url>
-      <releases>
-        <updatePolicy>always</updatePolicy>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-  -->
+    <!--
+      <repository>
+        <id>apache.maven2.snapshot.repository</id>
+        <name>Apache Maven 2 repository</name>
+        <url>http://people.apache.org/maven-snapshot-repository</url>
+        <releases>
+          <updatePolicy>always</updatePolicy>
+          <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+          <updatePolicy>always</updatePolicy>
+        </snapshots>
+      </repository>
+    -->
 
     <repository>
       <id>tamingtext.maven2.repository</id>
@@ -663,11 +663,11 @@
       <id>sonatype-nexus-public</id>
       <name>SonaType public snapshots and releases repository</name>
       <url>https://oss.sonatype.org/content/groups/public</url>
-      <releases> 
-          <enabled>true</enabled>
-      </releases> 
+      <releases>
+        <enabled>true</enabled>
+      </releases>
       <snapshots>
-          <enabled>true</enabled>
+        <enabled>true</enabled>
       </snapshots>
     </repository>
 
